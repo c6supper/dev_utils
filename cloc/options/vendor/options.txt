@@ -1,0 +1,3 @@
+exclude-dir gwm,dev_utils,.repo
+match-d /(VIP/test_device/integration/qnx|android/vendor/(nobo|noch))/
+include-lang Java,C/C++ Header,C,C++,Protocol Buffers,XML,Python,JSON,Rust,Bourne Shell,Markdown,make,CMake
