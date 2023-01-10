@@ -10,6 +10,9 @@
 ## Installation
 
 ```bash
+
+# install perl if needed
+
 # to support multi-cores on old OS
 cpan Parallel::ForkManager
 ```
@@ -27,12 +30,15 @@ cpan Parallel::ForkManager
 ## How to
 
 ```bash
+# 1. checkout a fresh project, please be noted, the HMI should be checkout independently
+
 # for vendor , nobo etc.
-./bin/cloc ../../ --config options/vendor/options.txt --processes=`grep -c ^processor /proc/cpuinfo`
+./bin/cloc {project_source_path} --config options/vendor/options.txt --processes=`grep -c ^processor /proc/cpuinfo`
+./bin/cloc {HMI_source_path} --include-lang="Java,C/C++ Header,C,C++,Protocol Buffers,XML,Python,JSON,Rust,Bourne Shell,Markdown,make,CMake" --processes=`grep -c ^processor /proc/cpuinfo`
 
 # for ic_vendor , qualcomm etc.
-./bin/cloc ../../ --config options/ic_vendor/options.txt --processes=`grep -c ^processor /proc/cpuinfo`
+./bin/cloc {project_source_path} --config options/ic_vendor/options.txt --processes=`grep -c ^processor /proc/cpuinfo`
 
-# for third_party , qualcomm etc.
-./bin/cloc ../../ --config options/third_party/options.txt --processes=`grep -c ^processor /proc/cpuinfo`
+# for third_party , google etc.
+./bin/cloc {project_source_path} --config options/third_party/options.txt --processes=`grep -c ^processor /proc/cpuinfo`
 ```

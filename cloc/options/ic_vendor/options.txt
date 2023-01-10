@@ -1,0 +1,5 @@
+exclude-dir gwm,nobo,noch,.repo
+match-d /(qcom)/
+include-lang Java,C/C++ Header,C,C++,Protocol Buffers,XML,Python,JSON,Rust,Bourne Shell,Markdown,make,CMake
+csv
+out output/ic_vendor.csv

@@ -1,2 +1,4 @@
-exclude-dir "vendor,gwm,dev_utils,.repo"
-include-lang "Java,C/C++ Header,C,C++,Protocol Buffers,XML,Python,D,JSON,Rust,Go,SWIG,Bourne Shell,Markdown,make,Kotlin,CMake,Objective-C,Perl,C#,JavaScript,Objective-C++"
+exclude-dir vendor,gwm,dev_utils,.repo,qcom
+include-lang Java,C/C++ Header,C,C++,Protocol Buffers,XML,Python,D,JSON,Rust,Go,SWIG,Bourne Shell,Markdown,make,Kotlin,CMake,Objective-C,Perl,C#,JavaScript,Objective-C++
+csv
+out output/third_party.csv
